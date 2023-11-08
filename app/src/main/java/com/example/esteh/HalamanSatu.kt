@@ -95,7 +95,8 @@ fun HalamanSatu(
 
             }
             Divider(
-                thickness = dimensionResource(id = R.dimen.thickness_divider)
+                thickness = dimensionResource(id = R.dimen.thickness_divider),
+                modifier = Modifier.padding(bottom = dimensionResource(id = R.dimen.padding_medium))
             )
             Row (
                 modifier = Modifier
@@ -108,6 +109,7 @@ fun HalamanSatu(
                 OutlinedButton(
                     modifier= Modifier.weight(1f),
                     onClick = onCancelButtonClicked){
+                    Text(stringResource(id = R.string.cancel))
 
                 }
                 Button(modifier = Modifier.weight(1f),

@@ -1,5 +1,3 @@
-@file:OptIn(ExperimentalMaterial3Api::class,
-    ExperimentalMaterial3Api::class)
 package com.example.esteh
 
 import androidx.compose.foundation.layout.padding
@@ -59,6 +57,7 @@ fun EsJumboAppBar(
     )
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun EsJumboApp(
     viewModel: OrderViewModel = viewModel(),

@@ -30,7 +30,7 @@ import com.example.esteh.ui.theme.EstehTheme
 
 @Composable
 fun HalamanHome(
-    onNextButtonClicked: ()-> Unit
+    onNextButtonClicked: () -> Unit
 ){
     val image = painterResource(id = R.drawable.esteh)
     Column (
@@ -84,7 +84,7 @@ fun HalamanHome(
         ){
             Button(
                 modifier = Modifier.weight(1f),
-                onClick = { onNextButtonClicked }
+                onClick = onNextButtonClicked
             ) {
                Text(stringResource(id = R.string.next))
             }
